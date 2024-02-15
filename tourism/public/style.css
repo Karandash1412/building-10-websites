@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+body,
+html {
+    background-color: black;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 300;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: black;
+    color: azure;
+    margin: 39px;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 29px;
+    background-color: orange;
+    color: black;
+    padding: 34px 3px 37px 23px;
+    font-weight: 400;
+}
+
+a {
+    /* display: inline-block; */
+    text-decoration: none;
+    color: azure;
+}
+
+ul {
+    list-style: none;
+    font-size: 17pt;
+}
+
+li {
+    padding-top: 11px;
+    transition: 0.5s;
+}
+
+li:hover {
+    color: orange;
+}
+
+
+section {
+    flex: 2;
+    background-image: url("../image/bg.png");
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+
+}
+
+.logo {
+    margin: 108px 0px 0px 88px;
+    font-size: 44px;
+}
+
+h1 {
+    font-size: 56pt;
+    font-weight: 500;
+    margin-left: 44px;
+}
+
+p {
+    color: orange;
+    margin-left: 44px;
+    font-size: 20pt;
+}
+
+p:hover {
+    color: antiquewhite;
+}
+
+@media(max-width:500px) {
+    main {
+        flex-direction: column;
+    }
+
+    ul,
+    header {
+        text-align: center;
+        margin: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    h1 {
+        font-size: 24pt;
+        color: white;
+    }
+
+    p {
+        color: aliceblue;
+    }
+}
