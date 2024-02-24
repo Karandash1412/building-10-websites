@@ -91,7 +91,7 @@ p:hover {
     color: antiquewhite;
 }
 
-@media(max-width:500px) {
+@media(max-width:600px) {
     main {
         flex-direction: column;
     }
@@ -102,10 +102,6 @@ p:hover {
         margin: 0;
     }
 
-    .logo {
-        display: none;
-    }
-
     h1 {
         font-size: 24pt;
         color: white;
@@ -113,5 +109,10 @@ p:hover {
 
     p {
         color: aliceblue;
+    }
+
+    .logo {
+        margin: 0;
+        font-size: 0;
     }
 }

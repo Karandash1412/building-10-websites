@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1)), url('../image/global-home-bg-comp.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav {
+    padding: 1% 3%;
+    position: sticky;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo>i {
+    font-weight: 700;
+    font-size: 42px;
+    padding: 0px 11px;
+}
+
+h2 {
+    font-size: 39px;
+    color: #FFD43B;
+}
+
+.nav-right-side {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-right-side>a {
+    padding-top: 3px;
+    padding-right: 45px;
+    color: rgb(127, 127, 127);
+    transition: 0.4s;
+}
+
+.nav-right-side>a:hover {
+    color: white;
+}
+
+.input input {
+    background-color: rgb(27, 27, 27);
+    color: rgb(127, 127, 127);
+    padding: 6px 40px;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    cursor: pointer;
+    width: 70px;
+    height: 31px;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    border: 3px solid rgb(80, 80, 80);
+    border-radius: 4px;
+    margin-left: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(102, 102, 102);
+    border: 3px solid rgb(102, 102, 102);
+
+}
+
+.option {
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 14px;
+}
+
+.option>p {
+    margin: 37px 6px;
+    color: rgb(152, 152, 152);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.discover {
+    background-color: #FFD43B;
+    border: 3px solid #FFD43B;
+    width: 275px;
+    height: 55px;
+    border-radius: 6px;
+    margin-right: 12px;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.discover:hover {
+    background-color: rgb(211, 179, 65);
+    border: 3px solid rgb(211, 179, 65);
+}
+
+.features {
+    background-color: transparent;
+    border: 1px solid rgb(152, 152, 152);
+    height: 55px;
+    width: 130px;
+    border-radius: 6px;
+    color: rgb(152, 152, 152);
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.features:hover {
+    background-color: rgb(152 152 152/30%);
+    border: 1px solid rgb(152, 152, 152);
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-icons>p {
+    margin-bottom: 24px;
+    color: rgb(119, 119, 119);
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+.container-card {
+    display: flex;
+}
+
+.prime {
+    background-image: url("../image/icons/prime_Video.webp");
+}
+
+.icon {
+    background-image: url("../image/icons/icon.webp");
+}
+
+.hayu {
+    background-image: url("../image/icons/Hayu.webp");
+}
+
+.google {
+    background-image: url("../image/icons/Google_play.webp");
+}
+
+.disney {
+    background-image: url("../image/icons/Disney.webp");
+}
+
+.apple {
+    background-image: url("../image/icons/Apple_tv.webp");
+}
+
+.card {
+    width: 43px;
+    height: 43px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 16px;
+    border-radius: 9px;
+    font-size: 19px;
+    text-align: center;
+}
+
+@media(max-width:890px) {
+    h1 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .option>p {
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    nav {
+        padding: 0
+    }
+
+    .nav-right-side>a {
+        padding-right: 25px;
+    }
+
+    .btn {
+        margin-right: 7px;
+    }
+}
+
+@media(max-width:786px) {
+    nav {
+        flex-direction: column;
+
+    }
+
+    .nav-right-side>a {
+        color: rgb(196, 196, 196);
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 13pt;
+    }
+}
+
+@media(max-width:550px) {
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .option>p,
+    .container-icons>p {
+        font-size: 14px;
+        font-weight: 300;
+
+    }
+
+    .features {
+        height: 48px;
+        width: 130px;
+        font-weight: 300;
+    }
+
+    .discover {
+        width: 176px;
+        height: 48px;
+        font-weight: 500;
+        font-size: 11px;
+    }
+
+    input,
+    .input>i {
+        display: none;
+    }
+
+    .card {
+        width: 35px;
+        height: 35px;
+    }
+}
