@@ -1,0 +1,220 @@
+ol {
+    display: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    font-family: "Anta", sans-serif;
+}
+
+a {
+    text-decoration: 0;
+    color: black;
+}
+
+.container {
+    padding: 10px 24px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.main>h1 {
+    color: rgb(93, 93, 238);
+    font-size: 49px;
+    display: inline;
+    position: relative;
+}
+
+.main h1::after {
+    content: "";
+    position: absolute;
+    background-color: #ffe9e9;
+    box-shadow: 0 0 8px #ffd6d6;
+    height: 15px;
+    left: 9px;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.main>p {
+    font-weight: 100;
+    font-size: 21px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.animation {
+    position: relative;
+    text-align: center;
+    top: -80px;
+    font-size: 31px;
+    font-weight: 800;
+
+}
+
+.sub-topic {
+    color: #d76b6b;
+    padding: 10px 24px;
+}
+
+.color {
+    color: rgb(93, 93, 238);
+}
+
+img {
+    width: 250px;
+    height: 450px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.project {
+    width: 380px;
+    height: 450px;
+    border-radius: 9px;
+    transition: 0.4s ease;
+    border: 2px solid black;
+    margin: 26px 5px;
+}
+
+.card1 {
+    background-image: url("../image/Project_9.png");
+    background-position: center;
+    background-size: cover;
+    width: auto;
+}
+
+.card2 {
+    background-image: url("../image/Project_8.png");
+    background-position: center;
+    background-size: cover;
+    width: auto;
+}
+
+.card3 {
+    background-image: url("../image/Project_7.png");
+    background-position: center;
+    background-size: cover;
+    width: auto;
+}
+
+.card4 {
+    background-image: url("../image/Project_6.png");
+    background-position: center;
+    background-size: cover;
+    width: auto;
+}
+
+.card5 {
+    background-image: url("../image/Project_5.png");
+    background-position: center;
+    background-size: cover;
+    width: auto;
+}
+
+.card6 {
+    background-image: url("../image/Project_4.png");
+    background-position: center;
+    background-size: cover;
+    width: auto;
+}
+
+.card7 {
+    background-image: url("../image/Project_3.png");
+    background-position: center;
+    background-size: cover;
+    width: auto;
+}
+
+.card8 {
+    background-image: url("../image/Project_2.png");
+    background-position: center;
+    background-size: cover;
+    width: auto;
+}
+
+.card9 {
+    background-image: url("../image/Project_1.png");
+    background-position: center;
+    background-size: cover;
+    width: auto;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover,
+.card7:hover,
+.card8:hover,
+.card9:hover {
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 5px 3px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.sheet1 {
+    width: 410px;
+}
+
+.sheet2 {
+    width: 340px;
+}
+
+.image {
+    border: 1px solid black;
+    height: 320px
+}
+
+.pop-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d76b6b;
+}
+
+.pop-up h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    ;
+}
+
+.btn {
+    background-color: #c2d1fb;
+    border-radius: 100px;
+    box-shadow: rgba(44, 89, 187, 0.2) 0 -25px 18px -14px inset, rgba(44, 84, 187, 0.15) 0 1px 2px, rgba(44, 63, 187, 0.15) 0 2px 4px, rgba(44, 46, 187, 0.15) 0 4px 8px, rgba(44, 61, 187, 0.15) 0 8px 16px, rgba(44, 70, 187, 0.15) 0 16px 32px;
+    color: rgb(0, 53, 128);
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    box-shadow: rgba(44, 84, 187, 0.35) 0 -25px 18px -14px inset, rgba(44, 46, 187, 0.25) 0 1px 2px, rgba(44, 65, 187, 0.25) 0 2px 4px, rgba(44, 61, 187, 0.25) 0 4px 8px, rgba(44, 73, 187, 0.25) 0 8px 16px, rgba(44, 61, 187, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}

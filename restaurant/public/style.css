@@ -125,4 +125,8 @@ p:hover {
     h1 {
         font-size: 31px;
     }
+
+    .container {
+        padding-bottom: 35px;
+    }
 }

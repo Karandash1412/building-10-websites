@@ -26,7 +26,7 @@ header {
     justify-content: space-around;
 }
 
-.card p {
+.logo p {
     margin-top: 7px;
     transition-duration: 0.4s;
 
@@ -36,7 +36,8 @@ header {
     color: coral;
 }
 
-.card {
+.card,
+.logo {
     display: flex;
 }
 
@@ -106,13 +107,16 @@ li>strong {
     font-size: larger;
 }
 
-
-
 ul {
     display: flex;
     gap: 10px;
     list-style-type: none;
+    align-items: center;
 
+}
+
+.icon {
+    display: none;
 }
 
 @media(max-width:820px) {
@@ -120,7 +124,7 @@ ul {
         display: block;
     }
 
-    .card p {
+    .logo p {
         margin-top: 14px;
     }
 
@@ -145,11 +149,35 @@ ul {
     header {
         padding: 20px 10px;
         justify-content: space-between;
+        margin: 3px 11px;
     }
 
     ul {
         flex-direction: column;
         align-items: center;
+        padding-left: 0px;
+    }
+
+    h1 {
+        font-size: 39px;
+    }
+
+    .drop-menu {
+        display: none;
+    }
+
+    .icon {
+        cursor: pointer;
+        display: unset;
+    }
+
+    .icon>i {
+        font-weight: 600;
+        font-size: 29px;
+    }
+
+    .show-nav {
+        display: flex;
     }
 
 }
